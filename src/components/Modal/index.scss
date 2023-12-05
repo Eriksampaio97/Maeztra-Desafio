@@ -1,0 +1,165 @@
+.removeModal #modal_login {
+  display: none;
+}
+
+#modal_login {
+  background: rgb(0, 0, 0, 0.5);
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  text-align: center;
+  z-index: 3;
+  max-height: initial; 
+
+  .popup_modal {
+    z-index: 2;
+    position: fixed;
+    justify-content: center;
+    margin: 0 auto;
+    top: 14rem;
+    left: 0;
+    right: 0;
+    width: 53rem;
+    height: 33rem;
+    background: #ffffff;
+    transform: scale(1.1); 
+
+    .close_modal {
+      position: absolute;
+      left: 49.5rem;
+      position: absolute;
+      top: -1.5rem;
+
+      button {
+        background: transparent;
+        color: #ffffff;
+        border: none;
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+
+    .content_modal {
+      display: flex;
+      
+      .form_modal {
+        display: grid;
+        line-height: 1rem;
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 2rem;
+        height: 23rem;
+
+        svg {
+          margin: 0 auto;
+        }
+
+        span {
+          font-size: 0.9rem;
+          margin-top: -2rem;
+          color: #464B54;
+          text-transform: uppercase;
+        }
+
+        p {
+          color: #787D83;
+          font-size: 1.3rem;
+        }
+
+        strong {
+          color: #787D83;
+          margin-top: -2rem;
+          font-size: 1.3rem;
+        }
+
+        form {
+          display: grid;
+
+          input {
+            border-radius: 0.6rem;
+            padding: 0 0.5rem;
+            border: 1px solid #c4c4c4;
+            background: #ffffff;
+            width: 20rem;
+            height: 2.5rem;
+          }
+
+          button {
+            align-items: center;
+            text-align: center;
+            background: #FAA500;
+            height: 2.5rem;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 0.6rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width:414px) {
+      width: 80%;
+      height: 25rem;
+
+      .close_modal {
+        left: auto;
+        right: 0;
+
+        button {
+          font-weight: bold;
+          font-size: 1.1rem;
+        }
+      }
+
+      .content_modal {
+        width: auto;
+        .image_modal {
+          display: none;
+        }
+
+        .form_modal {
+          height: 21rem;
+
+          form {
+            input {
+              height: 3rem;
+            }
+
+            button {
+              height: 3rem;
+            }
+          } 
+        }
+      }
+    }
+
+    @media screen and (max-width:360px) {
+      width: 85%;
+      top: 12rem;
+
+      .content_modal {
+        .form_modal {
+          height: 21rem;
+
+          form {
+            input {
+              height: 3rem;
+            }
+
+            button {
+              height: 3rem;
+            }
+          } 
+        }
+      }
+    }
+  }
+}
+.icon_newsletter{
+  margin: 0 auto;
+}

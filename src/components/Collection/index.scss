@@ -1,0 +1,64 @@
+.collection {
+  max-width: 1280px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 5rem;
+
+  &__text {
+    margin: 1rem;
+  }
+  &__title {
+    margin: 1rem;
+    margin-top: 5rem;
+  }
+  &__subtitle {
+    margin: 1rem;
+    margin-top: 1rem;
+    width: 26rem;
+    height: 10rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+ 
+  @media screen and (min-width: 1024px) {
+    &__banner {
+      width: 50rem;
+      height: 26rem;
+    }
+  }
+  
+
+  
+}
+
+@media screen and (max-width: 1024px){
+  .collection {
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0;
+    &__title{
+      margin-top: 20px;
+    }
+    &__text {
+      margin-top: -4rem;
+    }
+    &__image  {
+      margin-top: 40px;
+    }
+    &__banner {
+      max-width: 300px;
+      width: 100% !important;
+      height: 185px !important;
+      
+    }
+    &__title {
+      padding: 20px;
+    }
+    &__subtitle {
+      padding: 20px;
+    }
+  }
+}
